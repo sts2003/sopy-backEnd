@@ -8,6 +8,7 @@ const Student = new Schema(
       type: String,
       required: true,
     },
+
     age: {
       type: Number,
       required: true,
@@ -24,6 +25,12 @@ const Student = new Schema(
       type: String,
       required: true,
     },
+    lecture: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: `Lecture`,
+      },
+    ],
   },
   { versionKey: false }
 );

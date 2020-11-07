@@ -1,4 +1,6 @@
 type Query {
   getAllStudents: [Student!]!
   getStudentByOne(name: String!): Student!
+
+  getStudentAge(age: Int!): [Student]!
 }

@@ -2,5 +2,6 @@ type Query {
   getAllBooks: [Book!]!
   getOneBook(title: String!): Book!
 
+  getRealBooks: [Book!]!
   searchBook(title: String!): [Book!]!
 }

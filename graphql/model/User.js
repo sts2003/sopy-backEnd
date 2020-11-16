@@ -24,7 +24,14 @@ const User = new Schema(
       type: String,
       required: true,
     },
+    videos: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: `Video`,
+      },
+    ],
   },
+
   {
     versionKey: false,
   }

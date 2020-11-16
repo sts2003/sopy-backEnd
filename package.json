@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "dev" : "cross-env NODE_ENV=development nodemon --exec babel-node src/app.js"
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
@@ -24,6 +25,8 @@
     "graphql-tools": "^6.2.5",
     "merge-graphql-schemas": "^1.7.8",
     "mongoose": "^5.10.10",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.15",
+    "nodemailer-smtp-pool": "^2.8.3"
   }
 }

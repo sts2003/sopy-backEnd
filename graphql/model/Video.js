@@ -8,7 +8,7 @@ const Video = new Schema(
       type: String,
       required: true,
     },
-    thumbnailPath: {
+    thumbNailPath: {
       type: String,
       required: true,
     },
@@ -16,34 +16,6 @@ const Video = new Schema(
       type: String,
       required: true,
     },
-    videoPath: {
-      type: String,
-      required: true,
-    },
-    createdAt: {
-      type: String,
-      required: true,
-    },
-    hit: {
-      type: Number,
-      required: true,
-    },
-    author: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: `User`,
-    },
-    likes: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: `User`,
-      },
-    ],
-    comments: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: `Comment`,
-      },
-    ],
   },
   { versionKey: false }
 );

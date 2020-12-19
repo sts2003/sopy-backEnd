@@ -1,5 +1,0 @@
-type Query {
-  getAllCompany: [Company!]!
-
-  getRealCompany(value: String!): [Company!]!
-}

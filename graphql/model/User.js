@@ -40,11 +40,6 @@ const User = new Schema(
       required: true,
     },
 
-    createdAt: {
-      type: String,
-      required: true,
-    },
-
     videos: [
       {
         type: mongoose.Schema.Types.ObjectId,

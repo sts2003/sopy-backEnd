@@ -40,6 +40,12 @@ const User = new Schema(
       required: true,
     },
 
+    secretCode: {
+      type: String,
+      required: true,
+      default: "-",
+    },
+
     videos: [
       {
         type: mongoose.Schema.Types.ObjectId,

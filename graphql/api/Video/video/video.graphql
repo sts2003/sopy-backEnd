@@ -1,3 +1,20 @@
 type Query {
   getAllVideos: [Video!]!
+  getVideoOne(id: String!): Video!
+}
+
+type Mutation {
+  registVideo(
+    title: String!
+    description: String!
+    thumbNailPath: String!
+  ): Boolean!
+
+  updateVideo(
+    id: String!
+    title: String!
+    description: String!
+    thumbNailPath: String!
+  ): Boolean!
+  deleteVideo(id: String!): Boolean!
 }
